@@ -1,9 +1,19 @@
-/* ===== General Styles ===== */
 body {
     background-color: #f0f2f5;
     font-family: "Segoe UI", sans-serif;
     padding-top: 80px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
 
 .avatar {
     width: 40px;
@@ -13,7 +23,6 @@ body {
     border: 2px solid #fff;
 }
 
-/* ===== Search Box ===== */
 .search-box {
     width: 250px;
     border-radius: 50px;
@@ -22,10 +31,8 @@ body {
     padding-left: 15px;
 }
 
-/* ===== Story Section ===== */
 .story {
-    display: flex;
-    justify-content: center;
+
     position: relative;
     width: 110px;
     height: 190px;
@@ -40,6 +47,7 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
+    border-radius: 15px;
 }
 
 .story:hover .story-img {
@@ -67,7 +75,29 @@ body {
     color: #000;
 }
 
-/* ===== Sidebar ===== */
+.story-avatar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 2px;
+    background: #006eff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-avatar img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 0px solid #e41d1d;
+
+    object-fit: cover;
+}
+
 .sidebar-left,
 .sidebar-right {
     position: sticky;
@@ -102,7 +132,6 @@ body {
     border-radius: 10px;
 }
 
-/* ===== Post Section ===== */
 .post {
     background: white;
     border-radius: 10px;
@@ -174,7 +203,6 @@ body {
     border-radius: 6px;
 }
 
-/* ===== Navbar ===== */
 .nav-icon {
     text-decoration: none;
     transition: color 0.2s ease;
@@ -233,7 +261,6 @@ body {
     padding-bottom: 10px;
 }
 
-/* ===== Profile Card ===== */
 .profile-card {
     background: #fff;
     border-radius: 15px;
@@ -273,7 +300,6 @@ body {
     transform: scale(1.2);
 }
 
-/* ===== Footer ===== */
 .footer {
     background-color: #9e9e9e;
     color: #fff;
@@ -283,8 +309,11 @@ body {
     margin-top: 10px;
 }
 
-/* ===== Utilities ===== */
 .giua {
     text-align: center;
     padding: 10px;
+}
+
+.content {
+    flex: 1;
 }
