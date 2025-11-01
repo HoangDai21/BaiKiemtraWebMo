@@ -61,20 +61,3 @@ body {
     padding: 10px;
 
 }
-
-.footer {
-    background-color: #0e007a;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    padding: 0px;
-    margin-top: 10px;
-}
-
-.search-box {
-    width: 250px;
-    border-radius: 50px;
-    background-color: #f0f2f5;
-    border: none;
-    padding-left: 15px;
-}
