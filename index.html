@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar fixed-top bg-white shadow-sm px-4 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" width="40"
+                height="40" alt="logo">
+            <input type="text" class="form-control search-box" placeholder="Search Facebook">
+        </div>
+
+        <div class="d-flex fs-4 gap-5">
+            <a href="index.html" class="text-dark nav-icon"><i class="bi bi-house-door-fill"></i></a>
+            <a href="video.html" class="text-dark nav-icon"><i class="bi bi-tv-fill"></i></a>
+            <a href="market.html" class="text-dark nav-icon"><i class="bi bi-shop"></i></a>
+            <a href="profile.html" class="text-dark nav-icon"><i class="bi bi-person-circle"></i></a>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+            <i class="bi bi-bell-fill fs-4"></i>
+            <i class="bi bi-messenger fs-4"></i>
+            <img src="images/avata1.JPG" class="avatar" alt="user">
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-3 d-none d-md-block sidebar-left p-3">
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-person-circle"></i> Hoàng Đại</li>
+                    <li><i class="bi bi-people-fill"></i> Friends</li>
+                    <li><i class="bi bi-play-btn-fill"></i> Watch</li>
+                    <li><i class="bi bi-shop"></i> Marketplace</li>
+                    <li><i class="bi bi-clock-history"></i> Memories</li>
+                    <li><i class="bi bi-bookmark-fill"></i> Saved</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 p-3">
+                <div class="d-flex gap-2 mb-3 overflow-auto stories-container">
+                    <div class="story create-story">
+                        <img src="images/avata1.JPG" class="story-img" alt="create story">
+                        <div class="story-overlay d-flex flex-column justify-content-center align-items-center">
+                            <i class="bi bi-plus-circle-fill fs-3 text-primary"></i>
+                            <span class="small">Create story</span>
+                        </div>
+                    </div>
+
+                    <div class="story">
+                        <img src="images/avata4.JPG" class="story-img" alt="story">
+                        <div class="story-overlay"><span>Việt Dũng</span></div>
+                    </div>
+
+                    <div class="story">
+                        <img src="images/avata3.JPG" class="story-img" alt="story">
+                        <div class="story-overlay"><span>Bonnie</span></div>
+                    </div>
+
+                    <div class="story">
+                        <img src="images/avata2.JPG" class="story-img" alt="story">
+                        <div class="story-overlay"><span>Mar Sweetie</span></div>
+                    </div>
+
+                    <div class="story">
+                        <img src="images/avata1.JPG" class="story-img" alt="story">
+                        <div class="story-overlay"><span>Xuân Hải</span></div>
+                    </div>
+                    <div class="story">
+                        <img src="images/avata2.JPG" class="story-img" alt="story">
+                        <div class="story-overlay"><span>Lê Văn Hùng</span></div>
+                    </div>
+                    <div class="story">
+                        <img src="images/avata3.JPG" class="story-img" alt="story">
+                        <div class="story-overlay"><span>Nguyễn Văn Cường</span></div>
+                    </div>
+                    <div class="story">
+                        <img src="images/avata4.JPG" class="story-img" alt="story">
+                        <div class="story-overlay"><span>Marquee</Marquee></span></div>
+                    </div>
+
+                    <div class="story">
+                        <img src="images/avata1.JPG" class="story-img" alt="story">
+                        <div class="story-overlay"><span>Hoàng Đại</span></div>
+                    </div>
+                </div>
+
+                <div class="create-post bg-white rounded shadow-sm p-3 mb-3">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <img src="images/avata1.JPG" class="avatar" alt="user">
+                        <input type="text" class="form-control rounded-pill" placeholder="What's on your mind, Đại?">
+                    </div>
+
+                    <div class="d-flex justify-content-around text-secondary mt-2">
+                        <span><i class="bi bi-camera-video text-danger"></i> Live video</span>
+                        <span><i class="bi bi-image text-success"></i> Photo/video</span>
+                        <span><i class="bi bi-emoji-smile text-warning"></i> Feeling/activity</span>
+                    </div>
+                </div>
+
+                <div id="newsfeed">
+
+                </div>
+            </div>
+
+            <div class="col-md-3 d-none d-md-block sidebar-right p-3">
+                <h6 class="text-muted">Contacts</h6>
+                <ul class="list-unstyled">
+                    <li><img src="images/avata1.JPG" class="avatar"> Meta AI</li>
+                    <li><img src="images/avata2.JPG" class="avatar"> Anh Thy</li>
+                    <li><img src="images/avata3.JPG" class="avatar"> Minh Tuấn</li>
+                    <li><img src="images/avata4.JPG" class="avatar"> Ngọc Anh</li>
+                    <li><img src="images/avata1.JPG" class="avatar"> Hoàng Duy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+        <div style="justify-items: center;">
+            <h4>© No copyright 2025</h4><br>
+            <p>Bản quyền thuộc về công ty Hoàng Đại</p>
+            <p>323 Giai Phong, Nam Dinh, Ninh Binh</p>
+            <p>Liên hệ : 777 888 999</p>
+        </div>
+    </footer>
+</body>
+
+</html>
